@@ -1,0 +1,72 @@
+<!DOCTYPE html >
+
+<html lang = "en">
+    <head> 
+        <meta character ="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Store</title>
+
+        <!--link icon-->
+
+        <!--link file css-->
+        <link rel="stylesheet" href="style.css">
+
+
+    </head>
+    <body>
+        <div class="contanier">
+
+            <nav>
+                <div class="logo">
+                    <i class="fa-solid fa-store"></i>
+                    <h1><em>Fash-Simp</em></h1>
+                </div>
+
+                <ul>
+                    <li class="active"><a href="#">home</a></li>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">shop</a></li>
+                    <li><a href="#">contact us</a></li>
+                    <li><a href="#">wishlist</a></li>
+
+                    <li><a href="#"><i class="fa-solid fa-store"></i></a></li>
+                </ul>
+            </nav>
+            <div class="content">
+                <div class="div-text">
+                    <span>outfit of the day</span>
+                    <h3>all yours</h3>
+                    <h1>styles are here</h1>
+                    <p1><i>Combination of simplicity over a design.<br> 
+                    Wear a fashionable outfit and make yourself feel unique in the crowd<br>of same.</i>
+                    </p1>
+                    <br>
+                    <br>
+                    
+                    <a href="#" class="btn">buy now</a>
+
+                </div>
+                <div class="div-img">
+                    <img  id="big-img"src="jacket1.png" alt="">
+        
+                    
+                </div>
+                <div class="small-img">
+                    <img onclick="myTshirt(this.src)"src="jacket1.png" alt="">
+                    <img onclick="myTshirt(this.src)"src="jacket2.png" alt="">
+                    <img onclick="myTshirt(this.src)"src="jacket3.png" alt="">
+                </div>
+
+            </div>
+        </div>
+        <script>
+            let bigImage = document.getElementById('big-img');
+
+            function myTshirt(shirt){
+                bigImage.src = shirt
+            }
+        </script>
+    </body>
+
+</html>
